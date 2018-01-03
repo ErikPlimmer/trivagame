@@ -28,9 +28,10 @@
 	<div class="row empty">
 	<div class="col-lg-12"><strong>Disney Triva Game</strong></h1></div>
 	</div>
+	<div id="timer"></div>
     	<div class="row empty">
 		<div class="col-lg-12">
-			<input type="button" id="button" value="Play the Game" onclick="startGame();" />
+			<input type="button" id="button" value="Start Game" onclick="startGame();" />
 		</div>
 		</div><!-- empty row end -->	
 
@@ -39,10 +40,10 @@
     	<div class="col-lg-12 main">
 			
 			<p class="q1">1. In Disney's Moana what item was Moana on a Quest to return?<BR>
-			<input type="radio" name="1.Moana's item" value="heart">The Heart of Te Fiti<BR>
-			<input type="radio" name="1.Moana's item" value="eye">The Eye of Te Fiti<BR>
-			<input type="radio" name="1.Moana's item" value="soul">The Soul of Te Fiti<BR>
-			<input type="radio" name="1.Moana's item" value="magic">The Magic of Te Fiti<BR>
+			<input type="radio" name="q1" id="heart" value="heart">The Heart of Te Fiti<BR>
+			<input type="radio" name="q1" id="eye" value="eye">The Eye of Te Fiti<BR>
+			<input type="radio" name="q1" id="soul" value="soul">The Soul of Te Fiti<BR>
+			<input type="radio" name="q1" id="magic" value="magic">The Magic of Te Fiti<BR>
 			</p>
 
 		</div><!--colum end-->
@@ -53,10 +54,10 @@
     	<div class="col-lg-12 main">
 			
 			<p class="q2">2. In Disney's "Cars 3" Lightning McQueen used witch alias durung his race at Thunder Hallow?<BR>
-			<input type="radio" name="2.McQueens alias" value="Joe">Joe Slowgo<BR>
-			<input type="radio" name="2.McQueens alias" value="Chester">Chester Whipplefilter<BR>
-			<input type="radio" name="2.McQueens alias" value="Frank">Frank Carburetor<BR>
-			<input type="radio" name="2.McQueens alias" value="Mr.Mud">Mr. Muddybritches<BR>
+			<input type="radio" name="q2" id="joe" value="joe">Joe Slowgo<BR>
+			<input type="radio" name="q2" id="chester" value="chester">Chester Whipplefilter<BR>
+			<input type="radio" name="q2" id="frank" value="frank">Frank Carburetor<BR>
+			<input type="radio" name="q2" id="mud" value="mr.Mud">Mr. Muddybritches<BR>
 			</p>
 		</div><!--colum end-->
     </div><!--row1 end-->
@@ -66,8 +67,8 @@
     	<div class="col-lg-12 main">
 			
 			<p class="q3">3. In Disney's "Wall-E" Wall-E was stranded on Earth tasked with clean up of trash left by humans?<BR>
-			<input type="radio" name="3.Wall-E" value="True">True<BR>
-			<input type="radio" name="3.Wall-E" value="False">False<BR>
+			<input type="radio" name="q3" id="true" value="true">True<BR>
+			<input type="radio" name="q3" id="false" value="false">False<BR>
 			</p>
 		</div><!--colum end-->
     </div><!--row1 end-->
@@ -77,10 +78,10 @@
     	<div class="col-lg-12 main">
 			
 			<p class="q4">4. In Disney's "Finding Dory" Dory befriended an Octopus with how many missing tentacles?<BR>
-			<input type="radio" name="4.Dorys friend" value="2">2<BR>
-			<input type="radio" name="4.Dorys friend" value="3">3<BR>
-			<input type="radio" name="4.Dorys friend" value="1">1<BR>
-			<input type="radio" name="4.Dorys friend" value="4">4<BR>
+			<input type="radio" name="q4" id="2" value="2">2<BR>
+			<input type="radio" name="q4" id="3" value="3">3<BR>
+			<input type="radio" name="q4" id="1" value="1">1<BR>
+			<input type="radio" name="q4" id="4" value="4">4<BR>
 			</p>
 		</div><!--colum end-->
     </div><!--row1 end-->
@@ -89,13 +90,25 @@
     
     	<div class="col-lg-12 main">
 			
-			<p class="q5"></p>
+			<p class="q5">5. In Disney's "Tomorrowland" What ride in Disneyland led to the entrance of Tomorrowland?<BR>
+			<input type="radio" name="q5" id="spacemt" value="spacmt">Space Mountain<BR>
+			<input type="radio" name="q5" id="smallwrld" value="smallwrld">It's A Small World<BR>
+			<input type="radio" name="q5" id="matterhorn" value="matterhorn">Matterhorn<BR>
+			<input type="radio" name="q5" id="autopia" value="autopia">Autopia<BR>
+			</p>
 		</div><!--colum end-->
     </div><!--row1 end-->
-
-
-
+	
+    	<div class="row empty">
+		<div class="col-lg-12">
+			<input type="button" id="end" value="Finished" onclick="endGame();" />
+		</div>
+		</div><!-- empty row end -->
 
 	</div><!--main container end-->	
 </body>
+</footer> 
+		<footer><i class="fa fa-copyright" aria-hidden="true"></i>
+		Erik Plimmer
+		</footer>
 </html>
